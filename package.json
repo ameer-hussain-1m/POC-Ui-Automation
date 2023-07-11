@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "assert": "^2.0.0",
+    "soft-assert": "^0.2.7"
+  }
+}

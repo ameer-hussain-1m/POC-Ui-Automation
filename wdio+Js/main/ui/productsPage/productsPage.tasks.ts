@@ -5,7 +5,7 @@ import * as assertions from "../../utils/browserAssertions.utils"
 
 export async function checkIfProductPageIsOpen()
 {
-    await assertions.verifyElementIsExisting(locators.heading,"We are not on product page lol")
+    await assertions.verifyElementsMatches(locators.pageHeading, "Add a product","heading is "+locators.pageHeading);
 }
 
 export async function addNewItem()

@@ -11,4 +11,5 @@ export async function checkIfProductPageIsOpen()
 export async function addNewItem()
 {
     await commonActions.click(locators.newProductBtn)
+    browser.pause(3000);
 }

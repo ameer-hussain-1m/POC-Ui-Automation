@@ -37,7 +37,8 @@ async() => {
 })
 Then ("The user will be able to add the product after adding the product info",
 async() => {
-    //await addAProductPageActions.checkIfAddAProductPageIsOpen();
-    await addAProductPageActions.addProductInfoAndSave(credentials.addActiveProduct.Status,credentials.addActiveProduct.Name,credentials.addActiveProduct.Description,credentials.addActiveProduct.Stock,credentials.addActiveProduct.Price,credentials.addActiveProduct.productPhotoPath)
+    await addAProductPageActions.checkIfAddAProductPageIsOpen();
+    await addAProductPageActions.addProductInfo(credentials.addActiveProduct.Status,credentials.addActiveProduct.Name,credentials.addActiveProduct.Description,credentials.addActiveProduct.Stock,credentials.addActiveProduct.Price,credentials.addActiveProduct.productPhotoPath)
+    await addAProductPageActions.saveinfo();
     browser.pause(10000);
 })

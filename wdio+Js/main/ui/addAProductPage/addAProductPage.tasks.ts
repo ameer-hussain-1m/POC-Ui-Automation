@@ -14,7 +14,7 @@ export async function addProductInfo (status,name,description,stock,price,photo)
     //    await commonActions.click(locators.statusPicker);
     //    (await $(locators.statusPicker)).click();
 
-       await commonActions.click(await locators.setStatus(status));
+      // await commonActions.click(await locators.setStatus(status));
 
        //set name
        await commonActions.sendKeysToElement($(locators.productName),name)

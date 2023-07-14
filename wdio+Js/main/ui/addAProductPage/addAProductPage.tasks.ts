@@ -9,9 +9,9 @@ export async function checkIfAddAProductPageIsOpen ()
 
 export async function addProductInfoAndSave (status,name,description,stock,price,photo)
 {     
-       //set status
+       //set status 
        //await commonActions.click(locators.statusPicker);
-      // browser.pause(3000);
+        browser.pause(3000);
        //await commonActions.click(await locators.setStatus(status));
 
        //set name
